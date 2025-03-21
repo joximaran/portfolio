@@ -1,4 +1,4 @@
-/* Asegura que el body y html ocupen el 100% del alto de la pantalla */
+/* body */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,12 +13,12 @@ html, body {
   
   /* Header */
   header {
-    flex-shrink: 0; 
+    flex-shrink: 0;
   }
   
   /* Sección de gracias */
   #gracias {
-    flex-grow: 1;
+    min-height: 100vh; 
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -111,4 +111,5 @@ html, body {
   /* Footer */
   footer {
     flex-shrink: 0; 
+    margin-top: auto; 
   }
