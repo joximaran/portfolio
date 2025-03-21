@@ -1,0 +1,91 @@
+/* gracias.css */
+.gracias-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 4em 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gracias-info {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.gracias-description {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #54595f;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.gracias-name {
+    color: #181818;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.gracias-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botón "volver al inicio" */
+.button-volver {
+    background-color: #f26aa9;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.button-volver:hover {
+    background-color: white;
+    color: #f26aa9;
+    border: 2px solid #f26aa9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1100px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gracias-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .gracias-img {
+        max-width: 300px;
+        margin-top: 30px;
+    }
+}

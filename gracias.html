@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio personal de Maria Jose Maran" />
+  <title>Maria Jose Maran</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+  />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/gracias.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="column menu-icon-container">
+      <!-- Logo  -->
+      <div class="logo-header">
+        <span class="logo-text">MARIA JOSE MARAN</span>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="nav-header">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#skills" class="nav-link">CONOCIMIENTOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#portfolio" class="nav-link">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link selected">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botón para abrir el menú en móviles -->
+      <button
+        type="button"
+        class="open-menu-btn"
+        aria-controls="sidebar-menu"
+        aria-expanded="false"
+      >
+        Menu <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú lateral (sidebar) -->
+  <section class="sidebar-menu" id="sidebar-menu" aria-hidden="true">
+    <button class="close-menu-btn" aria-label="Cerrar Menú" tabindex="-1">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <ul class="sidebar-nav">
+      <li class="sidebar-item">
+        <a href="index.html#about" class="sidebar-link">INICIO</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="index.html#skills" class="sidebar-link">CONOCIMIENTOS</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="index.html#portfolio" class="sidebar-link">PORTFOLIO</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="index.html#contact" class="sidebar-link">CONTACTO</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Gracias -->
+  <section class="section about-section" id="gracias">
+    <div class="column main-content">
+      <div class="gracias-info">
+        <h1 class="gracias-name">¡Gracias por escribirme!</h1>
+        <p class="gracias-description">
+          Gracias por tomarte el tiempo para contactarme, el mensaje ha sido enviado correctamente, en breve te enviaré mi respuesta.
+        </p>
+        <a href="index.html" class="button-volver">VOLVER AL INICIO</a>
+      </div>
+      <img src="images/foto-inicio.jpg" alt="Foto de Maria Jose Maran" class="gracias-img" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <ul class="footer-nav-menu">
+        <li class="footer-nav-item">
+          <a href="index.html#about" class="footer-nav-link">INICIO</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="index.html#skills" class="footer-nav-link">CONOCIMIENTOS</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="index.html#portfolio" class="footer-nav-link">PORTFOLIO</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="index.html#contact" class="footer-nav-link">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer-social-links">
+      <li class="footer-social-item">
+        <a href="https://twitter.com/joximaran" class="footer-social-link twitter-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="https://github.com/joximaran" class="footer-social-link github-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github-alt footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="https://www.linkedin.com/in/joximaran/" class="footer-social-link linkedin-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="mailto:mariajosemaran@gmail.com" class="footer-social-link email-link" aria-label="Email">
+          <i class="fas fa-envelope footer-social-icon"></i>
+        </a>
+      </li>
+    </ul>
+    Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
+  </footer>
+
+  <!-- Incluir JavaScript -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
