@@ -79,8 +79,13 @@ footer {
   }
 }
 
+.footer-social-item {
+  text-align: center;
+}
+
 footer p { 
   text-transform: none;
   margin-top: 20px; 
   color: #a2a2a2
 }
+

@@ -11,10 +11,11 @@
   background-repeat: no-repeat;
   text-align: center;
   color: #333;
-  padding: 40px 20px 0px 0 px;
+  padding: 40px 20px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .quote-section .column {
@@ -28,14 +29,16 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .quote-icon {
   font-size: 3rem;
   color: #333;
   margin-bottom: 20px;
-  align-self: center; 
-  padding-top: 80px; 
+  align-self: center;
+  padding-top: 80px;
 }
 
 .quote {
@@ -45,6 +48,8 @@
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .quote-author {
@@ -58,6 +63,8 @@
 @media (max-width: 768px) {
   .quote-section {
     padding: 60px 20px;
+    background-size: cover; 
+    background-position: center; 
   }
 
   .quote {
@@ -66,7 +73,7 @@
 
   .quote-icon {
     font-size: 2rem;
-    padding-top: 0; 
+    padding-top: 0;
   }
 
   .quote-author {

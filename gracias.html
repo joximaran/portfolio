@@ -5,24 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio personal de Maria Jose Maran" />
   <title>Gracias por contactarme</title>
+  <!-- Fuentes -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
+  <!-- Íconos de FontAwesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
   />
+  <!-- Íconos de Devicon -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Favicon -->
   <link
-  rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff1493%22>mjm</text></svg>"
-/>
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff1493%22>mjm</text></svg>"
+  />
+  <!-- Estilos -->
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/layout.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" href="styles/gracias.css" />
+  <!-- Metaetiquetas para redes sociales -->
+  <meta property="og:title" content="Maria Jose Maran - Gracias">
+  <meta property="og:description" content="Gracias por contactar a Maria Jose Maran, diseñadora y desarrolladora frontend.">
+  <meta property="og:image" content="ruta/a/una/imagen.png">
+  <meta property="og:url" content="https://tusitio.com/gracias.html">
 </head>
 <body>
   <!-- Header -->
@@ -34,37 +44,29 @@
       </div>
 
       <!-- Menú de navegación -->
-      <header>
-        <div class="column menu-icon-container">
-          <!-- Logo (tu nombre) -->
-          <div class="logo-header">
-            <span class="logo-text">MARIA JOSE MARAN</span>
-          </div>
-      
-          <!-- Menú de navegación -->
-          <nav class="nav-header">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="index.html#about" class="nav-link">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#skills" class="nav-link">CONOCIMIENTOS</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#portfolio" class="nav-link">PORTFOLIO</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#quote" class="nav-link">CITA</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#contact" class="nav-link selected">CONTACTO</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <nav class="nav-header" aria-label="Menú de navegación principal">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#skills" class="nav-link">CONOCIMIENTOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#portfolio" class="nav-link">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#quote" class="nav-link">CITA</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link selected">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Gracias -->
+  <!-- Sección de Gracias -->
   <section class="section about-section" id="gracias">
     <div class="column main-content">
       <div class="gracias-info">
@@ -74,13 +76,13 @@
         </p>
         <a href="index.html" class="button-volver">VOLVER AL INICIO</a>
       </div>
-      <img src="images/gracias.png" alt="Foto de Maria Jose Maran" class="gracias-img" />
+      <img src="images/gracias.png" alt="Ilustración de agradecimiento" class="gracias-img" />
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <nav class="footer-nav">
+    <nav class="footer-nav" aria-label="Menú de navegación del footer">
       <ul class="footer-nav-menu">
         <li class="footer-nav-item">
           <a href="index.html#about" class="footer-nav-link">INICIO</a>
@@ -92,36 +94,36 @@
           <a href="index.html#portfolio" class="footer-nav-link">PORTFOLIO</a>
         </li>
         <li class="footer-nav-item">
-          <a href="index.html#quote" class="footer-nav-link">CITA</a> <!-- Nuevo enlace -->
+          <a href="index.html#quote" class="footer-nav-link">CITA</a>
         </li>
         <li class="footer-nav-item">
           <a href="index.html#contact" class="footer-nav-link">CONTACTO</a>
         </li>
       </ul>
     </nav>
-    <ul class="footer-social-links">
+    <ul class="footer-social-links" aria-label="Enlaces a redes sociales">
       <li class="footer-social-item">
         <a href="https://twitter.com/joximaran" class="footer-social-link twitter-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-twitter footer-social-icon"></i>
+          <i class="fab fa-twitter footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
         <a href="https://github.com/joximaran" class="footer-social-link github-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github-alt footer-social-icon"></i>
+          <i class="fab fa-github-alt footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
         <a href="https://www.linkedin.com/in/joximaran/" class="footer-social-link linkedin-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin-in footer-social-icon"></i>
+          <i class="fab fa-linkedin-in footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="mailto:mariajosemaran@gmail.com" class="footer-social-link email-link" aria-label="Email">
-          <i class="fas fa-envelope footer-social-icon"></i>
+        <a href="mailto:mariajosemaran@gmail.com" class="footer-social-link email-link" aria-label="Enviar correo electrónico">
+          <i class="fas fa-envelope footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
-    Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
+    <p class="footer-text">Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada</p>
   </footer>
 </body>
 </html>
