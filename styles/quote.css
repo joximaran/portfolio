@@ -1,32 +1,43 @@
-/* Quote */
-
+/* Cita */
 .quote-section {
-  background-color: #8338ec;
+  background-color: #ff1493;
   color: white;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 .quote-icon {
   font-size: 5rem;
   margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .quote {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
 }
 
 .quote-author {
-  font-size: 1.69em;
+  font-size: 1.2rem;
   color: white;
-  margin-bottom: 0;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
-  blockquote {
-    margin: 0;
+  .quote {
+    font-size: 1.2rem;
+    padding: 0 1rem;
   }
 
-  .quote {
-    font-size: 1em;
+  .quote-icon {
+    font-size: 3rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
   }
 }
