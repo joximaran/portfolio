@@ -1,0 +1,32 @@
+/* Quote */
+
+.quote-section {
+  background-color: #8338ec;
+  color: white;
+}
+
+.quote-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.quote-author {
+  font-size: 1.69em;
+  color: white;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  blockquote {
+    margin: 0;
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+}
