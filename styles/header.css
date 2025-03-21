@@ -13,7 +13,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Contenedor del menú y logo */
@@ -80,7 +80,6 @@ header {
   font-weight: bold;
 }
 
-/* Efecto de solapa en el botón seleccionado (CONTACTO) en pantallas grandes */
 .nav-link.selected::before {
   content: "";
   position: absolute;
@@ -93,7 +92,6 @@ header {
   z-index: -1;
 }
 
-/* Hover específico para el botón seleccionado (CONTACTO) en pantallas grandes */
 .nav-link.selected:hover {
   background-color: #f26aa9;
   color: white;
@@ -121,31 +119,28 @@ header {
 }
 
 @media (max-width: 650px) {
-  /* Oculta el menú de navegación en móviles */
   .nav-header {
     display: none;
     position: absolute;
-    top: 60px; /* Ajusta según la altura del header */
+    top: 60px;
     right: 0;
     left: 0;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    text-align: center; /* Centra el menú */
-    border-top: 1px solid #eee; /* Borde gris suave arriba */
-    border-bottom: 1px solid #eee; /* Borde gris suave abajo */
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
   }
 
-  /* Muestra el menú cuando el checkbox está marcado */
   .menu-toggle:checked ~ .nav-header {
     display: block;
   }
 
-  /* Estilos para el menú en móviles */
   .nav-menu {
     flex-direction: column;
-    align-items: center; /* Centra los elementos */
+    align-items: center;
     padding: 10px;
   }
 
@@ -153,45 +148,39 @@ header {
     margin: 10px 0;
   }
 
-  /* Estilos para los enlaces en móviles */
   .nav-link {
-    padding: 10px 20px; /* Ajusta el padding */
-    width: 100%; /* Ocupa todo el ancho */
-    text-align: center; /* Centra el texto */
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
     color: #333;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
     transition: all 0.3s ease;
   }
 
-  /* Hover para los enlaces en móviles */
   .nav-link:hover {
-    background-color: #f26aa9; /* Fondo rosa */
-    color: white; /* Letra blanca */
+    background-color: #f26aa9;
+    color: white;
   }
 
-  /* Estilos específicos para el botón "CONTACTO" en móviles */
   .nav-link.selected {
     color: white;
-    padding: 10px 20px; /* Ajusta el padding */
-    background-color: #f26aa9; /* Fondo rosa */
-    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    background-color: #f26aa9;
+    border-radius: 5px;
     position: relative;
     z-index: 1;
     font-weight: bold;
   }
 
-  /* Elimina el efecto de pestaña en móviles */
   .nav-link.selected::before {
-    display: none; /* Oculta el triángulo superior */
+    display: none;
   }
 
-  /* Hover para el botón "CONTACTO" en móviles */
   .nav-link.selected:hover {
     background-color: #f26aa9;
     color: white;
   }
 
-  /* Muestra el botón de menú móvil */
   .open-menu-btn {
     display: block;
   }
