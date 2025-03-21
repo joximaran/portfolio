@@ -2,10 +2,10 @@
 .skills-section {
   background-color: #f4f4f4;
   padding: 4em 0;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-section .section-title {
@@ -13,7 +13,7 @@
   font-size: 2.5em;
   margin-bottom: 0.5em;
   color: #f26aa9;
-  padding:20px;
+  padding: 20px;
 }
 
 .skills-section .skills-description {
@@ -31,6 +31,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
@@ -38,10 +39,17 @@
 
 .skill {
   color: #2e2e31;
-  padding: 40px 20px;
   background-color: #fff;
+  border: 1px solid #dddfe5;
+  border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
 }
 
 .skill:hover {
@@ -50,17 +58,17 @@
 }
 
 .skill-icon {
-  font-size: 4.71em;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  font-size: 3em;
+  margin: 0;
   display: block;
   transition: 0.3s;
-  margin: 24px auto 20px;
+  color: inherit;
 }
 
 .skill-title {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 @media (max-width: 900px) {
