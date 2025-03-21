@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio personal de Maria Jose Maran" />
-  <title>Maria Jose Maran</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <meta name="description" content="Portfolio personal de Maria Jose Maran, diseñadora y desarrolladora frontend con más de 15 años de experiencia en diseño y tecnología." />
+  <title>Maria Jose Maran - Portfolio</title>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Íconos de FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- Íconos de Devicon -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff69b4%22>mjm</text></svg>" />
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff69b4%22>mjm</text></svg>" />
+  <!-- Estilos -->
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/layout.css" />
   <link rel="stylesheet" href="styles/header.css" />
@@ -21,17 +23,21 @@
   <link rel="stylesheet" href="styles/skills.css" />
   <link rel="stylesheet" href="styles/contact.css" />
   <link rel="stylesheet" href="styles/portfolio.css" />
+  <!-- Metaetiquetas para redes sociales -->
+  <meta property="og:title" content="Maria Jose Maran - Portfolio">
+  <meta property="og:description" content="Portfolio personal de Maria Jose Maran, diseñadora y desarrolladora frontend con más de 15 años de experiencia en diseño y tecnología.">
+  <meta property="og:image" content="https://tusitio.com/images/foto-inicio.jpg">
+  <meta property="og:url" content="https://tusitio.com">
 </head>
-
 <body>
+  <!-- Header -->
   <header>
     <div class="column menu-icon-container">
       <div class="logo-header">
         <span class="logo-text">MARIA JOSE MARAN</span>
       </div>
-  
-      <!-- Menú de navegación (solo visible en escritorio) -->
-      <nav class="nav-header">
+      <!-- Menú de navegación -->
+      <nav class="nav-header" aria-label="Menú de navegación principal">
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#about" class="nav-link">INICIO</a>
@@ -53,6 +59,7 @@
     </div>
   </header>
 
+  <!-- Sección About -->
   <section class="section about-section" id="about">
     <div class="column main-content">
       <div class="about-info">
@@ -66,6 +73,7 @@
     </div>
   </section>
 
+  <!-- Sección Skills -->
   <section class="section skills-section" id="skills">
     <div class="column content">
       <h2 class="section-title">Mis conocimientos</h2>
@@ -74,33 +82,34 @@
       </p>
       <div class="grid skills-grid">
         <div class="skill grid-item">
-          <i class="devicon-html5-plain colored skill-icon"></i>
+          <i class="devicon-html5-plain colored skill-icon" aria-hidden="true"></i>
           <p class="skill-title">HTML 5</p>
         </div>
         <div class="skill grid-item">
-          <i class="devicon-css3-plain colored skill-icon"></i>
+          <i class="devicon-css3-plain colored skill-icon" aria-hidden="true"></i>
           <p class="skill-title">CSS 3</p>
         </div>
         <div class="skill grid-item">
-          <i class="devicon-javascript-plain colored skill-icon"></i>
+          <i class="devicon-javascript-plain colored skill-icon" aria-hidden="true"></i>
           <p class="skill-title">JavaScript</p>
         </div>
         <div class="skill grid-item">
-          <i class="devicon-aftereffects-plain colored skill-icon"></i>
+          <i class="devicon-aftereffects-plain colored skill-icon" aria-hidden="true"></i>
           <p class="skill-title">After Effects</p>
         </div>
         <div class="skill grid-item">
-          <i class="devicon-illustrator-plain skill-icon"></i>
+          <i class="devicon-illustrator-plain skill-icon" aria-hidden="true"></i>
           <p class="skill-title">Illustrator</p>
         </div>
         <div class="skill grid-item">
-          <i class="devicon-git-plain colored skill-icon"></i>
+          <i class="devicon-git-plain colored skill-icon" aria-hidden="true"></i>
           <p class="skill-title">GIT</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Sección Quote -->
   <section class="section quote-section" id="quote" aria-label="Cita inspiradora">
     <div class="column content">
       <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
@@ -113,6 +122,7 @@
     </div>
   </section>
 
+  <!-- Sección Portfolio -->
   <section class="portfolio-section" id="portfolio">
     <h2 class="section-title">Mis proyectos</h2>
     <p class="section-description">
@@ -120,34 +130,32 @@
     </p>
     <div class="portfolio-grid">
       <div class="portfolio-item">
-        <a href="https://joximaran.com/project/visuales-para-vjs/" target="_blank"
-          style="display: block; text-decoration: none; color: inherit;">
+        <a href="https://joximaran.com/project/visuales-para-vjs/" target="_blank" rel="noopener noreferrer">
           <img src="images/portfolio1.jpg" alt="Badland Party Graphics" class="portfolio-thumb" />
           <p class="portfolio-name">Badland Party Graphics</p>
         </a>
       </div>
       <div class="portfolio-item">
-        <a href="https://brickintergroup.com/" target="_blank"
-          style="display: block; text-decoration: none; color: inherit;">
+        <a href="https://brickintergroup.com/" target="_blank" rel="noopener noreferrer">
           <img src="images/portfolio2.jpg" alt="Brick Group Web" class="portfolio-thumb" />
           <p class="portfolio-name">Brick Group Web</p>
         </a>
       </div>
       <div class="portfolio-item">
-        <a href="https://mateaky.com/" target="_blank"
-          style="display: block; text-decoration: none; color: inherit;">
+        <a href="https://mateaky.com/" target="_blank" rel="noopener noreferrer">
           <img src="images/portfolio3.jpg" alt="Yerba Mate Aky web" class="portfolio-thumb" />
           <p class="portfolio-name">Yerba Mate Aky web</p>
         </a>
       </div>
     </div>
     <div class="portfolio-link-container">
-      <a href="https://joximaran.com/portfolio/" target="_blank" class="portfolio-link">
+      <a href="https://joximaran.com/portfolio/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
         Todos los proyectos <strong>→</strong>
       </a>
     </div>
   </section>
 
+  <!-- Sección Contacto -->
   <section class="section contact-section" id="contact">
     <div class="contact">
       <div class="contact-column contact-info">
@@ -160,33 +168,28 @@
         <section aria-label="Links de redes sociales" class="social-links-section">
           <ul class="contact-social-links">
             <li class="contact-social-item">
-              <a href="https://joximaran.com/" class="contact-social-link web-link" aria-label="Web" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fas fa-globe contact-social-icon"></i>
+              <a href="https://joximaran.com/" class="contact-social-link web-link" aria-label="Web" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-globe contact-social-icon" aria-hidden="true"></i>
               </a>
             </li>
             <li class="contact-social-item">
-              <a href="https://www.facebook.com/joximaran" class="contact-social-link facebook-link"
-                aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook contact-social-icon"></i>
+              <a href="https://www.facebook.com/joximaran" class="contact-social-link facebook-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook contact-social-icon" aria-hidden="true"></i>
               </a>
             </li>
             <li class="contact-social-item">
-              <a href="https://www.linkedin.com/in/joximaran/" class="contact-social-link linkedin-link"
-                aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin-in contact-social-icon"></i>
+              <a href="https://www.linkedin.com/in/joximaran/" class="contact-social-link linkedin-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in contact-social-icon" aria-hidden="true"></i>
               </a>
             </li>
             <li class="contact-social-item">
-              <a href="https://www.instagram.com/joximaran/" class="contact-social-link instagram-link"
-                aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram contact-social-icon"></i>
+              <a href="https://www.instagram.com/joximaran/" class="contact-social-link instagram-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram contact-social-icon" aria-hidden="true"></i>
               </a>
             </li>
             <li class="contact-social-item">
-              <a href="https://github.com/joximaran" class="contact-social-link github-link" aria-label="GitHub"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github contact-social-icon"></i>
+              <a href="https://github.com/joximaran" class="contact-social-link github-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github contact-social-icon" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -198,24 +201,20 @@
           <div class="input-name-wrapper">
             <div class="form-control">
               <label for="firstname">Nombre *</label>
-              <input type="text" name="nombre" id="firtsname" class="input-firtsname input-control"
-                placeholder="Tu nombre" aria-label="Nombre" required />
+              <input type="text" name="nombre" id="firstname" class="input-firstname input-control" placeholder="Tu nombre" aria-label="Nombre" required />
             </div>
             <div class="form-control">
               <label for="lastname">Apellido *</label>
-              <input type="text" name="apellido" id="lastname" class="input-lastname input-control"
-                placeholder="tu apellido" aria-label="Apellido" required />
+              <input type="text" name="apellido" id="lastname" class="input-lastname input-control" placeholder="Tu apellido" aria-label="Apellido" required />
             </div>
           </div>
           <div class="form-control">
             <label for="email">Email *</label>
-            <input type="email" name="email" id="email" class="input-control" placeholder="tu email"
-              aria-label="Email" required />
+            <input type="email" name="email" id="email" class="input-control" placeholder="Tu email" aria-label="Email" required />
           </div>
           <div class="form-control">
             <label for="message">Mensaje *</label>
-            <textarea name="mensaje" id="message" cols="30" rows="10" class="input-control"
-              placeholder="Escriba un mensaje aquí" aria-label="Mensaje" required></textarea>
+            <textarea name="mensaje" id="message" cols="30" rows="10" class="input-control" placeholder="Escribe un mensaje aquí" aria-label="Mensaje" required></textarea>
           </div>
           <button type="submit" class="contact-send-btn button">Enviar</button>
         </form>
@@ -223,8 +222,9 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <nav class="footer-nav">
+    <nav class="footer-nav" aria-label="Menú de navegación del footer">
       <ul class="footer-nav-menu">
         <li class="footer-nav-item">
           <a href="#about" class="footer-nav-link">INICIO</a>
@@ -243,33 +243,29 @@
         </li>
       </ul>
     </nav>
-    <ul class="footer-social-links">
+    <ul class="footer-social-links" aria-label="Enlaces a redes sociales">
       <li class="footer-social-item">
-        <a href="https://twitter.com/joximaran" class="footer-social-link twitter-link" aria-label="Twitter"
-          target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-twitter footer-social-icon"></i>
+        <a href="https://twitter.com/joximaran" class="footer-social-link twitter-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="https://github.com/joximaran" class="footer-social-link github-link" aria-label="GitHub"
-          target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github-alt footer-social-icon"></i>
+        <a href="https://github.com/joximaran" class="footer-social-link github-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github-alt footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="https://www.linkedin.com/in/joximaran/" class="footer-social-link linkedin-link"
-          aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin-in footer-social-icon"></i>
+        <a href="https://www.linkedin.com/in/joximaran/" class="footer-social-link linkedin-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="mailto:mariajosemaran@gmail.com" class="footer-social-link email-link" aria-label="Email">
-          <i class="fas fa-envelope footer-social-icon"></i>
+        <a href="mailto:mariajosemaran@gmail.com" class="footer-social-link email-link" aria-label="Enviar correo electrónico">
+          <i class="fas fa-envelope footer-social-icon" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
-    Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
+    <p class="footer-text">Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada</p>
   </footer>
 </body>
-
 </html>
