@@ -27,6 +27,56 @@
   <link rel="stylesheet" href="styles/skills.css" />
   <link rel="stylesheet" href="styles/contact.css" />
   <link rel="stylesheet" href="styles/portfolio.css" />
+  <style>
+    /* Estilos del menú móvil */
+    .menu-toggle {
+      display: none;
+    }
+
+    .open-menu-btn {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #333;
+    }
+
+    .open-menu-btn:hover {
+      color: #f26aa9;
+    }
+
+    @media (max-width: 650px) {
+      .open-menu-btn {
+        display: block;
+      }
+
+      .nav-header {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .menu-toggle:checked ~ .nav-header {
+        display: block;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+      }
+
+      .nav-item {
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -36,6 +86,12 @@
       <div class="logo-header">
         <span class="logo-text">MARIA JOSE MARAN</span>
       </div>
+
+      <!-- Checkbox y label para el menú móvil -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="open-menu-btn" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </label>
 
       <!-- Menú de navegación -->
       <nav class="nav-header">
@@ -50,7 +106,7 @@
             <a href="#portfolio" class="nav-link">PORTFOLIO</a>
           </li>
           <li class="nav-item">
-            <a href="#quote" class="nav-link">CITA</a> <!-- Nuevo enlace -->
+            <a href="#quote" class="nav-link">CITA</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link selected">CONTACTO</a>
@@ -110,18 +166,18 @@
     </div>
   </section>
   
-<!-- Cita -->
-<section class="section quote-section" id="quote" aria-label="Cita inspiradora">
-  <div class="column content">
-    <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
-    <blockquote>
-      <p class="quote">
-        "El diseño no es solo lo que ves, es lo que haces sentir. Es la emoción que transmite, la conexión que crea y la historia que cuenta."
-      </p>
-      <footer class="quote-author">— Debbie Millman</footer>
-    </blockquote>
-  </div>
-</section>
+  <!-- Cita -->
+  <section class="section quote-section" id="quote" aria-label="Cita inspiradora">
+    <div class="column content">
+      <i class="fas fa-quote-right quote-icon" aria-hidden="true"></i>
+      <blockquote>
+        <p class="quote">
+          "El diseño no es solo lo que ves, es lo que haces sentir. Es la emoción que transmite, la conexión que crea y la historia que cuenta."
+        </p>
+        <footer class="quote-author">— Debbie Millman</footer>
+      </blockquote>
+    </div>
+  </section>
 
   <!-- Portfolio -->
   <section class="portfolio-section" id="portfolio">
@@ -237,7 +293,7 @@
           <a href="#portfolio" class="footer-nav-link">PORTFOLIO</a>
         </li>
         <li class="footer-nav-item">
-          <a href="#quote" class="footer-nav-link">CITA</a> <!-- Nuevo enlace -->
+          <a href="#quote" class="footer-nav-link">CITA</a>
         </li>
         <li class="footer-nav-item">
           <a href="#contact" class="footer-nav-link">CONTACTO</a>

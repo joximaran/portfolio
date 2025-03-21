@@ -3,38 +3,73 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
-  width: 100%; 
-  background-image: url('../images/fondonubes-quote.png'); 
-  background-size: cover; 
-  background-position: center; 
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../images/fondonubes-quote.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
-  color: #fff; 
-  padding: 20px; 
-  box-sizing: border-box; 
+  color: #333;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .quote-section .column {
-  max-width: 800px; 
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .quote-icon {
   font-size: 3rem;
-  color: #ff69b4; 
+  color: #333;
   margin-bottom: 20px;
+  align-self: center; 
+  padding-top: 0; 
 }
 
 .quote {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #fff; 
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .quote-author {
   font-size: 1.2rem;
-  color: #ff69b4; 
+  color: #333;
   font-weight: bold;
+  background: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+    padding: 60px 20px;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .quote-icon {
+    font-size: 2rem;
+    padding-top: 0; 
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
 }
