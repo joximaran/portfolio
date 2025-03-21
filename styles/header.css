@@ -152,23 +152,23 @@ header {
     padding: 10px 20px;
     width: 100%;
     text-align: center;
-    color: #333;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    color: #f26aa9;
+    border-radius: 0;
+    transition: color 0.3s ease;
+    background: none;
   }
 
   .nav-link:hover {
-    background-color: #f26aa9;
-    color: white;
+    background: none;
+    color: #000;
   }
 
   .nav-link.selected {
-    color: white;
+    color: #f26aa9;
     padding: 10px 20px;
-    background-color: #f26aa9;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
+    background: none;
+    border-radius: 0;
+    position: static;
     font-weight: bold;
   }
 
@@ -177,8 +177,8 @@ header {
   }
 
   .nav-link.selected:hover {
-    background-color: #f26aa9;
-    color: white;
+    background: none;
+    color: #000;
   }
 
   .open-menu-btn {

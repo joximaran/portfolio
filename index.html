@@ -97,19 +97,19 @@
       <nav class="nav-header">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#about" class="nav-link">INICIO</a>
+            <a href="#about" class="nav-link" onclick="closeMenu()">INICIO</a>
           </li>
           <li class="nav-item">
-            <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
+            <a href="#skills" class="nav-link" onclick="closeMenu()">CONOCIMIENTOS</a>
           </li>
           <li class="nav-item">
-            <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+            <a href="#portfolio" class="nav-link" onclick="closeMenu()">PORTFOLIO</a>
           </li>
           <li class="nav-item">
-            <a href="#quote" class="nav-link">CITA</a>
+            <a href="#quote" class="nav-link" onclick="closeMenu()">CITA</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link selected">CONTACTO</a>
+            <a href="#contact" class="nav-link selected" onclick="closeMenu()">CONTACTO</a>
           </li>
         </ul>
       </nav>
@@ -324,5 +324,12 @@
     </ul>
     Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
   </footer>
+
+  <!-- Script para cerrar el menú en móviles -->
+  <script>
+    function closeMenu() {
+      document.getElementById('menu-toggle').checked = false;
+    }
+  </script>
 </body>
 </html>
