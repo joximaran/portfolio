@@ -34,7 +34,7 @@
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 20px;
 }
 
 .skill {
@@ -71,14 +71,22 @@
   margin-top: 10px;
 }
 
+/* Tablet: 3 tarjetas por fila */
 @media (max-width: 900px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Móvil: 2 tarjetas por fila */
 @media (max-width: 550px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Centrar el grid en móviles */
+    padding: 0 10px; /* Padding reducido para móvil */
+  }
+
+  .skill {
+    padding: 15px; /* Padding reducido para móvil */
   }
 }
