@@ -1,43 +1,40 @@
-/* Cita */
+/* Estilos para la sección de Cita */
 .quote-section {
-  background-color: #ff1493;
-  color: white;
-  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+  background-image: url('../images/fondonubes-quote.png'); 
+  background-size: cover; 
+  background-position: center; 
   text-align: center;
+  color: #fff; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.quote-section .column {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .quote-icon {
-  font-size: 5rem;
+  font-size: 3rem;
+  color: #ff69b4; 
   margin-bottom: 20px;
-  color: rgba(255, 255, 255, 0.2);
 }
 
 .quote {
   font-size: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
   font-style: italic;
+  color: #fff; 
+  margin-bottom: 20px;
 }
 
 .quote-author {
   font-size: 1.2rem;
-  color: white;
-  margin-top: 1rem;
+  color: #ff69b4; 
   font-weight: bold;
-}
-
-@media (max-width: 500px) {
-  .quote {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-  }
-
-  .quote-icon {
-    font-size: 3rem;
-  }
-
-  .quote-author {
-    font-size: 1rem;
-  }
 }
